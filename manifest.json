@@ -1,0 +1,19 @@
+{
+  "name": "typing.com, keybr.com ads remover",
+  "description": "typing.com, keybr.com add removing extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": ["popup.js"],
+      "matches": [
+        "https://www.typing.com/*",
+        "https://www.keybr.com/"
+      ]
+    }
+  ]
+}
